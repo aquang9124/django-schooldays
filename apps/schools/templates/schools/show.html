@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show DetailView</title>
+</head>
+<body>
+	<h1>{{ object.name }}</h1>
+	{% if object.age %}
+	<p>{{ object.age }}</p>
+	{% else %}
+	<p>Teacher: {{ object.teacher.name }}</p>
+	{% endif %}
+	<p>{{ object.created_at | date }}</p>
+</body>
+</html>

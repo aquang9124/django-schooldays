@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teacher ListView</title>
+</head>
+<body>
+	{% for teacher in object_list %}
+	<p>{{ teacher.name }}</p>
+	{% empty %}
+	<p>No teachers here...</p>
+	{% endfor %}
+</body>
+</html>
